@@ -1,25 +1,3 @@
-.logo{
-  padding: 10px;
-}
-.footer {
-  background: black;
-  position: relative;
-  top: 370px;
-  bottom: 0%;
-  width: 100%;
-  padding: 10px;
-}
-.footer>center{
-  padding: 10px;
-}
-.footer p {
-  color: grey;
-}
-.about-footer {
-  width: 100%;
-  border-bottom: 1px solid grey;
-}
-.home{
-  padding-bottom: 1000px;
-  background: black;
+.signUp-header {
+    background: url("../../assets/images/home-cover.jpg") center/cover no-repeat; 
 }

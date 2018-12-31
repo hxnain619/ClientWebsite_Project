@@ -1,29 +1,39 @@
-import React,{ Fragment } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Components
-import Header from '../Components/Header/header';
-import Footer from '../Components/Footer/footer';
-// Screens
-import Home from  '../Screens/Home/home';
+
+import ContactComponent from "../screen/Contact/ContactComponent";
+import HomepageComponent from "../screen/Home/HomepageComponent";
+import LoginComponent from "../screen/Login/LoginComponent";
+import SignupComponent from "../screen/SignUp/SignupComponent";
+import ResetComponent from '../screen/Reset/ResetComponent';
+import MangaTextComponent from "../screen/MangaText/MangaTextComponent";
+import MangaListComponents from "../screen/MangaList/MangaListComponents";
+import MangaBioComponent from "../screen/MangaBio/MangaBioComponent";
+import MangaReadComponent from "../screen/MangaRead/MangaReadComponent";
+import NotFoundComponent from "../components/404/notFound";
+import ForgetPasswordModal from "../components/login/forgetPasswordModal";
 
 const AppRouter = () => {
-    return(
-        <BrowserRouter>
-            <Fragment>
-                <Header />
-                <Switch>
-                    <Route path="/" component={Home} exact/>
-                    <Route path='/mangalist'  exact />
-                    <Route path='/login'  exact />
-                    <Route path='/signup'  exact />
-                    <Route path='/contact' exact />
-                </Switch>
-                <Footer />
-            </Fragment>
-        </BrowserRouter>
-    )
+  return (
+    <BrowserRouter>
+        <Switch>
+          <Route path="/" component={HomepageComponent} exact />
+          <Route path="/home" component={HomepageComponent} exact />
+          <Route path="/login" component={LoginComponent} exact />
+          <Route path="/forgot" component={ForgetPasswordModal} exact />
+          <Route path="/sign up" component={SignupComponent} exact />
+          <Route path="/reset" component={ResetComponent} exact />
+          <Route path="/contact" component={ContactComponent} exact />
+          <Route path="/text list" component={MangaTextComponent} exact />
+          <Route path="/image list" component={MangaListComponents} exact />
+          <Route path="/mangabio" component={MangaBioComponent} exact />
+          <Route path="/mangareads" component={MangaReadComponent} exact />
+          <Route path='/notfound' component={NotFoundComponent} exact />
+        </Switch>
+    </BrowserRouter>
+  );
 };
 
 export default AppRouter;
