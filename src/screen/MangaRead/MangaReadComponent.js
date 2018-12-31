@@ -9,6 +9,8 @@ import BackTop from '../../components/global/backTop';
 import SearchModal from '../../components/global/searchModal';
 import MainContent from '../../components/MangaRead/mainContent';
 import SecondContainer from '../../components/MangaRead/secondContainer';
+import ChatBox from '../../components/global/chatbox';
+
 import M from 'materialize-css';
 import $ from 'jquery';
 
@@ -25,6 +27,7 @@ class MangaRead extends React.Component{
                 <Girl />
                 <BackTop />
                 <SearchModal />
+                <ChatBox />
                 
             </div>
         );

@@ -8,6 +8,8 @@ import BackTop from '../../components/global/backTop';
 import SearchModal from '../../components/global/searchModal';
 import MangasCard from '../../components/mangaImage/mangasCard';
 import Pagination from '../../components/mangaImage/pagination';
+import ChatBox from '../../components/global/chatbox';
+
 import M from 'materialize-css';
 import $ from 'jquery';
 
@@ -26,6 +28,7 @@ class MangaList extends React.Component{
                 <Girl />
                 <BackTop />
                 <SearchModal />
+                <ChatBox />
                 
             </div>
         );

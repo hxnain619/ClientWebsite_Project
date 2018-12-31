@@ -893,4 +893,20 @@ textarea.materialize-textarea:focus:not([readonly])+label,
         display: none!important;
     }
 }
+/*chat box*/
 
+.btn-chatBox{
+    position: fixed;
+    left:10px;
+    bottom:10px;
+    background:$purple;
+    box-shadow: $small-btn-shadow;
+    transition:background 300ms ease 0s , box-shadow 300ms ease 0s , transform 300ms ease;
+    transform:translateY(0);
+    z-index:888;
+    &:hover , &:focus{
+        box-shadow: $small-btn-shadow-hovered;
+        background:$purple;
+        transform:translateY(-2px);
+    }
+} 

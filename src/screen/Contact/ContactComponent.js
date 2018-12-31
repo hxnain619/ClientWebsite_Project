@@ -8,6 +8,8 @@ import UpupGirl from '../../components/global/upupgirl';
 import Girl from '../../components/global/girl';
 import BackTop from '../../components/global/backTop';
 import SearchModal from '../../components/global/searchModal';
+import ChatBox from '../../components/global/chatbox';
+
 import M from 'materialize-css';
 import $ from 'jquery';
 
@@ -23,6 +25,7 @@ class Contact extends React.Component{
                 <Girl />
                 <BackTop />
                 <SearchModal />
+                <ChatBox />
             </div>
         );
     }

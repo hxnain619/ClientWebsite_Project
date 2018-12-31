@@ -567,5 +567,19 @@ header {
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .manga-side-container {
     padding-left: 1em !important; } }
+/*chat box*/
+.btn-chatBox {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  background: #171941;
+  box-shadow: 0 18px 24px rgba(50, 50, 93, 0.1), 0 10px 16px rgba(0, 0, 0, 0.08);
+  transition: background 300ms ease 0s , box-shadow 300ms ease 0s , transform 300ms ease;
+  transform: translateY(0);
+  z-index: 888; }
+  .btn-chatBox:hover, .btn-chatBox:focus {
+    box-shadow: 0 28px 34px rgba(50, 50, 93, 0.1), 0 20px 26px rgba(0, 0, 0, 0.08);
+    background: #171941;
+    transform: translateY(-2px); }
 
 /*# sourceMappingURL=manga-read.css.map */

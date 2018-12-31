@@ -1,9 +1,12 @@
 import React from 'react';
+import FontAwesomeIcon from './fontAwesomeIcons';
 
-class ChatBox extends React.Component{
-    render(){
-        return(
-            <h1>demo</h1>
+class ChatBox extends React.Component {
+    render() {
+        return (
+                <a href="#!" className="btn-floating  btn-chatBox">
+                    <FontAwesomeIcon iconClasses="fab fa-facebook-messenger" />
+                </a>
         )
     }
 }
