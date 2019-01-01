@@ -1,20 +1,21 @@
 import React from 'react';
 import FontAwesomeIcons from './fontAwesomeIcons';
+import { Link } from 'react-router-dom';
 
-class Footer extends React.Component{
+class Footer extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            linkText : ["demo text here","demo text here","demo text here","demo text here"],
-            socialClasses : ["fab fa-facebook-f","fab fa-twitter"
-            ,"fab fa-google-plus-g","fab fa-linkedin-in",
-            "fab fa-pinterest-p","fas fa-rss","fab fa-vimeo-v"]
+            linkText: ["demo text here", "demo text here", "demo text here", "demo text here"],
+            socialClasses: ["fab fa-facebook-f", "fab fa-twitter"
+                , "fab fa-google-plus-g", "fab fa-linkedin-in",
+                "fab fa-pinterest-p", "fas fa-rss", "fab fa-vimeo-v"]
         }
     }
-    
-    render(){
-        return(
+
+    render() {
+        return (
             <footer className="container-fluid footer">
                 <div className="container container-first">
                     <div className="row">
@@ -27,7 +28,9 @@ class Footer extends React.Component{
                     <div className="divider"></div>
                     <div className="row">
                         <div className="col s8 offset-s2">
-                            <img src="src/images/logo.png" alt="upupmanga logo" />
+                            <Link to='/' >
+                                <img src="src/images/logo.png" alt="upupmanga logo" />
+                            </Link>
                             <div>
                                 {this.renderIcons()}
                             </div>
@@ -39,8 +42,8 @@ class Footer extends React.Component{
         )
     }
 
-    first(){
-        return(
+    first() {
+        return (
             <div className="col s12 l4">
                 <div className="container">
                     <div className="row">
@@ -51,7 +54,9 @@ class Footer extends React.Component{
                     </div>
                     <div className="row">
                         <div className="col s12">
-                            <img src="src/images/logo.png" alt="upupmanga logo"/>
+                            <Link to='/' >
+                                <img src="src/images/logo.png" alt="upupmanga logo" />
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -60,8 +65,8 @@ class Footer extends React.Component{
         )
     }
 
-    second(){
-        return(
+    second() {
+        return (
             <div className="col s12 l4">
                 <div className="container">
                     <div className="row">
@@ -82,8 +87,8 @@ class Footer extends React.Component{
         )
     }
 
-    third(){
-        return(
+    third() {
+        return (
             <div className="col s12 l4">
                 <div className="container">
                     <div className="row">
@@ -105,11 +110,11 @@ class Footer extends React.Component{
         )
     }
 
-    getList(){
-        
+    getList() {
+
         let temp = [];
 
-        for(let i=0 ; i<this.state.linkText.length ; i++){
+        for (let i = 0; i < this.state.linkText.length; i++) {
             temp.push(
                 <li key={i}>
                     <a href="#!">
@@ -123,14 +128,14 @@ class Footer extends React.Component{
 
     }
 
-    renderIcons(){
-        
+    renderIcons() {
+
         let temp = [];
 
-        for(let i=0 ; i<this.state.socialClasses.length ; i++){
+        for (let i = 0; i < this.state.socialClasses.length; i++) {
             temp.push(
-                <a key={i} className="btn-floating btn-large" href="#!">
-                    <FontAwesomeIcons iconClasses = {this.state.socialClasses[i]}/>
+                <a key={i} className="btn-floating btn-large" style={{margin: '5px'}} href="#!">
+                    <FontAwesomeIcons iconClasses={this.state.socialClasses[i]} />
                 </a>
             );
         }

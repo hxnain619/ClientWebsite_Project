@@ -48,13 +48,13 @@ class SideNav extends React.Component {
                                 <div className="collapsible-body">
                                     <ul>
                                         <li>
-                                            <Link to="text list" class="sidenav-close">
+                                            <Link to="text list" className="sidenav-close">
                                                 text listItem
                                             </Link>
                                         </li>
                                         <li className="divider"></li>
                                         <li>
-                                            <Link to="image list" class="sidenav-close">
+                                            <Link to="image list" className="sidenav-close">
                                                 image list
                                             </Link>
                                         </li>

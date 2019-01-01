@@ -5,7 +5,7 @@ class Header extends React.Component{
     
     render(){
         return(
-            <header className="container-fluid" >
+            <header className="container-fluid"  >
                 <div className="header-content">
                     {this.content()}           
                 </div>

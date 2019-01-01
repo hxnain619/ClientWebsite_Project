@@ -62,7 +62,6 @@ class Bio extends React.Component{
                                                 <td>ratings</td>
                                                 <td>
                                                     <span>
-                                                        {/**kal ka kaam */}
                                                         <FontAwesomeIcons iconClasses="fas fa-star"/>
                                                         <FontAwesomeIcons iconClasses="fas fa-star"/>
                                                         <FontAwesomeIcons iconClasses="fas fa-star"/>
@@ -92,7 +91,6 @@ class Bio extends React.Component{
                             </div>
                             <div className="col s12">
                                 <ul className="collection">
-                                    {/*bad main naya method bana aur loop chalana hai*/}
                                     <li className="collection-item">
                                         <a href="#!">
                                             chapter name
@@ -124,7 +122,6 @@ class Bio extends React.Component{
                                 <div className="divider"></div>
                             </div>
                             <div className="col s12">
-                                {/*kal subha ye loop work krna hai */ }
                                 <a href="#!" className="btn-badges">comedy</a>
                                 <a href="#!" className="btn-badges">action</a>
                                 <a href="#!" className="btn-badges">romance</a>
@@ -133,6 +130,7 @@ class Bio extends React.Component{
                         </div>
                     </div>
                 </div>
+                
             </div>
         )
     }

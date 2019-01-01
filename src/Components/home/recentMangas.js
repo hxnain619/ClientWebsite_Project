@@ -39,7 +39,9 @@ class RecentMangas extends React.Component{
         for(let i=0 ; i<this.state.latestImages.length ; i++){
             elem.push(
                 <div key={i} className="col s12 m6">
-                      <Cards image={this.state.latestImages[i]}/>
+                                 <Link to="/mangabio" >
+                                 <Cards image={this.state.latestImages[i]}/>
+                                 </Link>
                 </div>
             )
         }

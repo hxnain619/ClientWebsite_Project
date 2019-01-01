@@ -8,7 +8,6 @@ class Cards extends React.Component {
             <div className="card">
 
                 <div className="card-image">
-                <Link to="/mangabio" >
                     <div className="card-background" data-image-source={this.props.image}>
                     </div>
                     <div className="card-hidden-content">
@@ -19,7 +18,6 @@ class Cards extends React.Component {
                             <a href="#!">by : author name</a>
                         </span>
                     </div>
-                    </Link>
                 </div>
 
                 <div className="card-content">

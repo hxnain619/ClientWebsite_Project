@@ -12,6 +12,7 @@ class MangaCategories extends React.Component{
             "https://images.pexels.com/photos/837500/pexels-photo-837500.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
             "https://images.pexels.com/photos/1534560/pexels-photo-1534560.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
             "https://images.pexels.com/photos/1172105/pexels-photo-1172105.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+            "https://images.pexels.com/photos/1002106/pexels-photo-1002106.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
             "https://images.pexels.com/photos/1002106/pexels-photo-1002106.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
     ]}
     }
@@ -37,7 +38,7 @@ class MangaCategories extends React.Component{
         let elems = [];
 
         //cards
-        for(let i=0 ; i<this.state.latestImages.length ; i++){
+        for(let i=1 ; i<this.state.latestImages.length ; i++){
             elems.push(
                 <div key = {i} className="col s12 m6 xl4">
                     <Cards image={this.state.latestImages[i]}/>
@@ -59,11 +60,11 @@ class MangaCategories extends React.Component{
             <div className="col s12 l4">
                 <div className="row">
                     <div className="col s12">
-
+                    <Link to="/mangabio" >
                         <div className="card hero-card">
                             
                             <div className="card-image">
-                                <div className="card-background" data-image-source={this.props.image}></div>
+                                <div className="card-background" data-image-source={this.state.latestImages[0]}></div>
                                 <div className="card-hidden-content">
                                     <a href="#!">&nbsp;</a>
                                     <span className="card-views">24 views</span>
@@ -77,8 +78,8 @@ class MangaCategories extends React.Component{
                                     <p className="card-hero-title">demo title</p>
                                 </a>
                             </div>
-
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>

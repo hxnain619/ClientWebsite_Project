@@ -506,7 +506,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label,
 #back-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 10px;
   display: none;
   z-index: 99; }
 

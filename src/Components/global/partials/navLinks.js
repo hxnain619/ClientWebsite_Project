@@ -19,7 +19,7 @@ class NavLinks extends React.Component {
             if (i === 1) {
                 temp.push(
                     <li key={i}>
-                        <a className="dropdown-trigger waves-effect waves-light" data-target="manga-dropdown">
+                        <a href="#" className="dropdown-trigger waves-effect waves-light" data-target="manga-dropdown">
                             {this.props.text[i]}
                             <MaterialIcon iconName="arrow_drop_down" alignment="right" />
                         </a>

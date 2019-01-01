@@ -26,7 +26,7 @@ class Nav extends React.Component{
           <nav>
               
            <div className="nav-wrapper container">
-                <a data-target="mobile-demo" className="sidenav-trigger waves-effect waves-light">
+                <a href="#" data-target="mobile-demo" className="sidenav-trigger waves-effect waves-light">
                     <MaterialIcon iconName="menu"/>
                 </a>
 

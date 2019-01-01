@@ -32,6 +32,8 @@ class Login extends React.Component{
     
     componentDidMount(){
 
+        
+
         //JQuery Initialization
 
         let select = document.querySelectorAll('select'),

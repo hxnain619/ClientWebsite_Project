@@ -45,7 +45,9 @@ class LatestMangas extends React.Component{
         for(let i=0 ; i<this.state.latestImages.length ; i++){
             elem.push(
                 <div key = {i} className="col s12 m6 l4 xl3">
+                    <Link to='/mangabio'>
                      <Cards image={this.state.latestImages[i]}/>
+                     </Link>
                 </div>
             );
         }
@@ -53,7 +55,7 @@ class LatestMangas extends React.Component{
 
         return elem;
     }
-    componentDidMount(){
+       componentDidMount(){
 
         let cardsElem = document.getElementsByClassName('card-background');
 
@@ -62,6 +64,7 @@ class LatestMangas extends React.Component{
         });
 
     }
+
 
 }
 
