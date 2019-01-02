@@ -10,16 +10,37 @@ import UpupGirl from '../../components/global/upupgirl';
 import Girl from '../../components/global/girl';
 import BackTop from '../../components/global/backTop';
 import SearchModal from '../../components/global/searchModal';
-import ForgetPasswordModal from '../../components/login/forgetPasswordModal';
+import UserProfile from "write user profile component paht here... as i don't know path in your project";
 
 class Login extends React.Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            //to be fetched dynamically
+            loginStatus : false,
+        }
+
+        //implement these changes to every component as login and register components needs to be replaced
+
+        if(this.state.loginStatus){
+            this.state.headerText = "user profile";
+            document.title = "User Profile | Upupmanga";
+        }
+        else{
+            this.state.headerText = "login to your account"
+        }
+        
+    }
+
+
+
     render(){
         return(
             <div className="app">
-                <Nav activeLink="login"/>
-                <Header text="login to your account"    />
-                <ForgetPasswordModal />
-                <Form />      
+                {this.selectNavForPage()}
+                <Header text={this.state.headerText}/>
+                {this.selectMainContentForPage()}
                 <Footer />
                 <UpupGirl />
                 <Girl />
@@ -63,6 +84,29 @@ class Login extends React.Component{
 
     }
     
+    selectNavForPage(){
+        
+        if(this.state.loginStatus){
+            return <Nav activeLink="user profile" loginStatus={true}/>;
+        }
+        else{
+            return <Nav activeLink="login" loginStatus={false} />
+        }
+    
+    }
+
+    selectMainContentForPage(){
+
+        if(this.state.loginStatus){
+            return <UserProfile />
+        }
+        else{
+            return <Form />
+        }
+
+    }
+
+
 }
 
 export default Login;
